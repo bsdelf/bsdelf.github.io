@@ -12,7 +12,7 @@ tags: [doc, freebsd]
 
 注意：
 
-1. 本文的主要目的是介绍 FreeBSD 的正确使用姿势，确保用户在大方向上不出错。
+1. 本文主要目的是介绍 FreeBSD 的正确使用姿势，确保用户在大方向上不出错。
 1. 本文略去的操作细节都可以在[《FreeBSD 使用手册》](https://www.freebsd.org/doc/zh_CN.UTF-8/books/handbook/)或者 `man` 帮助文档中找到答案。
 1. 有能力的同学最好去阅读英文版 ["FreeBSD Handbook"](https://www.freebsd.org/doc/handbook/)，中文版有些落后。
 
