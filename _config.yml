@@ -9,8 +9,8 @@ permalink: /posts/:title
 # Build settings
 markdown: kramdown
 
-kramdown:
-    transliterated_header_ids: true
+#kramdown:
+#    transliterated_header_ids: true
 
 sass:
     style: :compressed
