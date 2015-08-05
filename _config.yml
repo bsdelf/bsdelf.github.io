@@ -1,0 +1,16 @@
+# Site settings
+title: bsdelf's Blog
+twitter_username: bsdelf
+github_username:  bsdelf
+zhihu_username:  bsdelf
+
+permalink: /posts/:title
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+    transliterated_header_ids: true
+
+sass:
+    style: :compressed

@@ -1,0 +1,56 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Lucida Grande", "Dejavu Sans", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+$mono-font-family: Monaco, "Dejavu Sans Mono", Consolas, monospace;
+
+$base-font-size:   16px;
+$tiny-font-size:   $base-font-size * 0.750; //16--12
+$small-font-size:  $base-font-size * 0.8125; //16--13
+$medium-font-size: $base-font-size * 1.125; //16--18
+$big-font-size:    $base-font-size * 1.250; //16--20
+$large-font-size:  $base-font-size * 1.625; //16--26
+$huge-font-size:   $base-font-size * 1.875; //16--30
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+$spacing-half:     15px;
+
+$grey-color:       #000000;//#828282;
+$grey-color-light:  lighten($grey-color, 20%);
+$grey-color-darker: darken($grey-color, 30%);
+
+$green-color:      #62c438;//#b5e853;
+$blue-color:       #428bd4;//#64aaf0;//#63c0f5;
+
+$on-palm:          300px;
+$on-laptop:        500px;
+
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-light"
+;
