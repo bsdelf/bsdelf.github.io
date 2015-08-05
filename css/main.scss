@@ -9,14 +9,23 @@
 $base-font-family: "Lucida Grande", "Dejavu Sans", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 $mono-font-family: Monaco, "Dejavu Sans Mono", Consolas, monospace;
 
-$base-font-size:   16px;
-$tiny-font-size:   $base-font-size * 0.750; //16--12
-$small-font-size:  $base-font-size * 0.8125; //16--13
-$medium-font-size: $base-font-size * 1.125; //16--18
-$big-font-size:    $base-font-size * 1.250; //16--20
-$large-font-size:  $base-font-size * 1.625; //16--26
-$huge-font-size:   $base-font-size * 1.875; //16--30
-$base-line-height: 1.5;
+//$base-font-size:   16px;
+//$tiny-font-size:   $base-font-size * 0.750; //16--12
+//$small-font-size:  $base-font-size * 0.8125; //16--13
+//$medium-font-size: $base-font-size * 1.125; //16--18
+//$big-font-size:    $base-font-size * 1.250; //16--20
+//$large-font-size:  $base-font-size * 1.625; //16--26
+//$huge-font-size:   $base-font-size * 1.875; //16--30
+//$base-line-height: 1.5;
+
+$tiny-font-size:    12px;
+$small-font-size:   13px;
+$base-font-size:    14px;
+$medium-font-size:  16px;
+$big-font-size:     18px;
+$large-font-size:   22px;
+$huge-font-size:    26px;
+$base-line-height:  1.5;
 
 $spacing-unit:     30px;
 $spacing-half:     15px;
@@ -30,8 +39,6 @@ $blue-color:       #428bd4;//#64aaf0;//#63c0f5;
 
 $on-palm:          300px;
 $on-laptop:        500px;
-
-
 
 // Using media queries with like this:
 // @include media-query($palm) {
