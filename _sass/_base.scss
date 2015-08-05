@@ -225,7 +225,18 @@ hr {
         vertical-align: middle;
 
         path {
-            fill: $grey-color-light;
+            fill: $grey-color;
+        }
+    }
+}
+
+.icon-rect {
+    > svg {
+        display: inline-block;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
         }
     }
 }
