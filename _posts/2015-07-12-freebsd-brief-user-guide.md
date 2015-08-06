@@ -178,7 +178,7 @@ alias install-bootcode  'gpart bootcode -b /boot/pmbr -p /boot/gptzfsboot -i 1 a
 
 ## 安装与更新
 
-第三方应用可以通过 `pkg` 和 ports 两种方式安装，具体参考使用手册中相关章节。前者是二进制安装，类似 Arch Linux 的 pacman，适合于普通用户和服务器用户；后者是编译安装，类似于 Gentoo Linux 的 portage，适合于机器性能比较好的、需要深度定制的用户。
+第三方应用是通过 `pkg` 或 ports 安装的。前者是二进制安装，类似 Arch Linux 的 pacman，适合于普通用户和服务器用户；后者是编译安装，类似于 Gentoo Linux 的 portage，适合于机器性能比较好的、需要深度定制的用户。
 
 两种安装方式最好不要混用。如果非要这么干，建议在第一次使用 ports 之前就把 `LOCALBASE` 环境变量设置成 `/usr/local` 以外的值。
 
