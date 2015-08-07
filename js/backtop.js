@@ -9,9 +9,9 @@ $(function() {
 var place_backtop = function() {
     var backtop = $("#backtop");
     var footer = $(".site-footer");
-    console.log(footer.offset().left);
-    console.log(footer.width());
-    console.log(backtop.width());
+    //console.log(footer.offset().left);
+    //console.log(footer.width());
+    //console.log(backtop.width());
     var off = footer.offset().left + footer.width() - backtop.width();
     backtop.css("left", off);
 };
