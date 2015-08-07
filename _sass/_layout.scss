@@ -165,6 +165,32 @@
 
 
 /**
+ * Backtop
+ */
+#backtop {
+    position: fixed;
+    width: $huge-font-size;
+    height: $huge-font-size;
+    right: 0;
+    bottom: calc(#{$spacing-unit}*2.5);
+    font-size: $huge-font-size;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+
+    > a {
+        color: $grey-color;
+    }
+}
+
+#backtop.bt-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/**
  * Page content
  */
 .page-content {
