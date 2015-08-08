@@ -8,7 +8,7 @@ tags: [doc, freebsd]
 {% assign manref = "https://www.freebsd.org/cgi/man.cgi?query=" %}
 
 
-修订日期：{{ site.time | date: "%Y-%m-%d"}}
+修订日期：2015.08.07
 
 注意：
 
