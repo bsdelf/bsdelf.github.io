@@ -25,6 +25,7 @@ var setup_backtop = function() {
     $(window).scroll(fade_backtop);
 
     place_backtop();
+    fade_backtop();
 };
 
 //----------------------------------------------------------------------------

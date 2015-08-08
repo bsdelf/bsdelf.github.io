@@ -183,11 +183,12 @@
  */
 #backtop {
     position: fixed;
-    width: $huge-font-size;
-    height: $huge-font-size;
+    width: $spacing-unit;
+    height: $spacing-unit;
+    line-height: $spacing-unit;
     right: 0;
-    bottom: calc(#{$spacing-unit}*2.5);
-    font-size: $huge-font-size;
+    bottom: $spacing-half + 48px;
+    font-size: $spacing-unit * 0.8;
     text-align: center;
     visibility: hidden;
     opacity: 0;
