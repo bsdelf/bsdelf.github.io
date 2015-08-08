@@ -25,10 +25,6 @@
     float: right;
     line-height: 64px;
 
-    .menu-icon {
-        display: none;
-    }
-
     .page-link {
         line-height: $base-line-height;
 
@@ -39,49 +35,6 @@
 
         .normal {
             color: $grey-color;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-light;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
         }
     }
 }
@@ -140,27 +93,6 @@
 
 .footer-col-right {
     float: right;
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
 }
 
 
@@ -237,12 +169,6 @@
     font-size: $large-font-size;
     //letter-spacing: -1px;
     line-height: 1;
-
-/*
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-*/
 }
 
 .post-content {
@@ -255,31 +181,14 @@
 
     h2 {
         font-size: $base-font-size * 1.3;
-
-/*
-        @include media-query($on-laptop) {
-            font-size: $large-font-size * 0.8;
-        }
-*/
     }
 
     h3 {
         font-size: $base-font-size * 1.2;
-/*
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-*/
     }
 
     h4 {
         font-size: $base-font-size * 1.1;
-
-/*
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-*/
     }
 
 }

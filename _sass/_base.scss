@@ -184,13 +184,6 @@ hr {
     padding-right: $spacing-unit*1.2;
     padding-left: $spacing-unit*1.2;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc($page-width - (#{$spacing-unit}));
-        max-width:         calc($page-width - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
 }
 
 .viewport {
