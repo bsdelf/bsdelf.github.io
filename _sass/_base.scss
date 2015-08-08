@@ -20,6 +20,7 @@ body {
     font-weight: normal;
     color: $grey-color;
     background: powderblue;
+    text-align: justify;
 
     @media screen and (max-width: $page-width + $spacing-unit) {
         background: #fcfcfc;
