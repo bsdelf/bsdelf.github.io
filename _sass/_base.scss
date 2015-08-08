@@ -20,6 +20,10 @@ body {
     font-weight: normal;
     color: $grey-color;
     background: powderblue;
+
+    @media screen and (max-width: $page-width + $spacing-unit) {
+        background: #fcfcfc;
+    }
 }
 
 
@@ -191,14 +195,17 @@ hr {
 
 .viewport {
     max-width: $page-width;
-    margin-right: auto;
-    margin-left: auto;
+    margin: $spacing-unit auto;
     background: #fcfcfc;
 
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
     border: 1px solid #808080;
     box-shadow: 2px 2px 4px #000;
+
+    @media screen and (max-width: $page-width + $spacing-unit) {
+        margin: 0 auto;
+        border: none;
+        box-shadow: none;
+    }
 }
 
 /**
