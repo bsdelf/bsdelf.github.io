@@ -19,12 +19,7 @@ body {
     line-height: $base-line-height;
     font-weight: normal;
     color: $grey-color-light;
-
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    //background: #151515 url("../images/bkg.png") 0 0;
-    background: #fcfcfc;
+    background: #303030;
 }
 
 
@@ -178,24 +173,24 @@ hr {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(720px - (#{$spacing-unit} * 2));
-    max-width:         calc(720px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc($page-width - (#{$spacing-unit} * 2));
+    max-width:         calc($page-width - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: $spacing-unit*1.2;
+    padding-left: $spacing-unit*1.2;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(720px - (#{$spacing-unit}));
-        max-width:         calc(720px - (#{$spacing-unit}));
+        max-width: -webkit-calc($page-width - (#{$spacing-unit}));
+        max-width:         calc($page-width - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
 }
 
 .wrapper2 {
-    max-width: 720px;
+    max-width: $page-width;
     margin-right: auto;
     margin-left: auto;
 }

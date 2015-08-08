@@ -1,12 +1,22 @@
+.viewport {
+    padding: 65px 0 49px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 /**
  * Site header
  */
 .site-header {
+    height: 64px;
+    margin-top: -65px;
     border-bottom: 1px dashed $grey-color-light;
-    min-height: 64px;
-
+    background: #fcfcfc;
     // Positioning context for the mobile navigation icon
-    position: relative;
+    //position: relative;
 }
 
 .site-title {
@@ -92,8 +102,12 @@
  * Site footer
  */
 .site-footer {
+    //padding: $spacing-unit / 2 0;
+    height: 48px;
     border-top: 1px dashed $grey-color-light;
-    padding: $spacing-unit / 2 0;
+    margin-bottom: -49px;
+    line-height: 48px;
+    background: #fcfcfc;
 }
 
 .social-media-list {
@@ -177,10 +191,6 @@
     text-align: center;
     visibility: hidden;
     opacity: 0;
-
-    > a {
-        color: $grey-color;
-    }
 }
 
 #backtop.bt-is-visible {
@@ -193,9 +203,16 @@
 /**
  * Page content
  */
+.site-central {
+    min-height: 100%;
+    background: #fcfcfc;
+}
+
 .page-content {
+    height: 100%;
     padding: $spacing-unit 0;
 }
+
 
 .page-heading {
     font-size: 20px;

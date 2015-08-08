@@ -4,18 +4,21 @@
     {% include head.html %}
 
     <body>
+        <div class="viewport wrapper2">
+            {% include header.html %}
 
-        {% include header.html %}
-
-        <div class="page-content">
-            <div class="wrapper">
-                {{ content }}
+            <div class="site-central">
+                <div class="page-content">
+                    <div class="wrapper">
+                        {{ content }}
+                    </div>
+                </div>
             </div>
+
+            {% include footer.html %}
+
+            <div id="backtop"><a href="">&#x2934;</a></div>
         </div>
-
-        {% include footer.html %}
-
-        <div id="backtop"><a href="">&#x2934;</a></div>
     </body>
 
 </html>
