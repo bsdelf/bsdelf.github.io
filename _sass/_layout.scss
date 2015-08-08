@@ -1,20 +1,10 @@
-.viewport {
-    padding: 65px 0 49px 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
 
 /**
  * Site header
  */
 .site-header {
     height: 64px;
-    margin-top: -65px;
     border-bottom: 1px dashed $grey-color-light;
-    background: #fcfcfc;
     // Positioning context for the mobile navigation icon
     //position: relative;
 }
@@ -102,12 +92,9 @@
  * Site footer
  */
 .site-footer {
-    //padding: $spacing-unit / 2 0;
     height: 48px;
     border-top: 1px dashed $grey-color-light;
-    margin-bottom: -49px;
     line-height: 48px;
-    background: #fcfcfc;
 }
 
 .social-media-list {
@@ -187,7 +174,7 @@
     height: $spacing-unit;
     line-height: $spacing-unit;
     right: 0;
-    bottom: $spacing-half + 48px;
+    bottom: $spacing-unit*1.5 + 48px;
     font-size: $spacing-unit * 0.8;
     text-align: center;
     visibility: hidden;
@@ -204,16 +191,10 @@
 /**
  * Page content
  */
-.site-central {
-    min-height: 100%;
-    background: #fcfcfc;
-}
-
 .page-content {
-    height: 100%;
+    min-height: 400px;
     padding: $spacing-unit 0;
 }
-
 
 .page-heading {
     font-size: 20px;
