@@ -18,12 +18,12 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: normal;
-    color: $grey-color;
-    background: powderblue;
     text-align: justify;
+    color: $grey-color;
+    background: $bg-color;
 
-    @media screen and (max-width: $page-width + $spacing-unit) {
-        background: #fcfcfc;
+    @media screen and (max-width: $viewport-min-width) {
+        background: $paper-color;
     }
 }
 
@@ -115,7 +115,7 @@ a {
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 4px solid $light-grey-color;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -167,19 +167,13 @@ table, th, td {
 }
 
 
-hr {
-    border-top: 1px solid $grey-color-light;
-    text-shadow: none;
-}
-
-
 
 /**
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc($page-width - (#{$spacing-unit} * 2));
-    max-width:         calc($page-width - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc($paper-width - (#{$spacing-unit} * 2));
+    max-width:         calc($paper-width - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit*1.2;
@@ -187,15 +181,15 @@ hr {
     @extend %clearfix;
 }
 
-.viewport {
-    max-width: $page-width;
+.paper {
+    max-width: $paper-width;
     margin: $spacing-unit auto;
-    background: #fcfcfc;
+    background: $paper-color;
 
-    border: 1px solid #808080;
-    box-shadow: 2px 2px 4px #000;
+    border: 1px solid $paper-border-color;
+    box-shadow: 2px 2px 4px $paper-shadow-color;
 
-    @media screen and (max-width: $page-width + $spacing-unit) {
+    @media screen and (max-width: $viewport-min-width) {
         margin: 0 auto;
         border: none;
         box-shadow: none;
@@ -241,54 +235,4 @@ hr {
             fill: $grey-color;
         }
     }
-}
-
-
-sup > a:before{
-    content: "[";
-}
-sup > a:after{
-    content: "]";
-}
-
-.footnotes {
-    border-top: 1px solid $grey-color-light;
-    padding-top: $spacing-unit / 2;
-    font-size: $small-font-size;
-}
-
-.footnotes code {
-    font-size: $small-font-size - 2px;
-}
-
-.footnotes ol {
-    counter-reset: idx 0;
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.footnotes li {
-    float: left;
-    width: 90%;
-    margin-left: 2em;
-}
-
-.footnotes li:before {
-    float: left;
-    content: '[' counter(idx) '] ';
-    counter-increment: idx;
-    width: 2em;
-    text-align: right;
-    margin-left: -2em;
-}
-
-.footnotes li:target  {
-    color: red;
-}
-
-.footnotes p {
-    float: left;
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
 }

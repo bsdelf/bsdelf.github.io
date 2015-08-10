@@ -3,17 +3,13 @@
  * Site header
  */
 .site-header {
-    height: 64px;
-    border-bottom: 1px dashed $grey-color-light;
-    // Positioning context for the mobile navigation icon
-    //position: relative;
+    height: $header-height;
+    border-bottom: 1px dashed $light-grey-color;
 }
 
 .site-title {
     font-size: $huge-font-size;
-    line-height: 64px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
+    line-height: $header-height;
     float: left;
     
     .normal {
@@ -23,7 +19,7 @@
 
 .site-nav {
     float: right;
-    line-height: 64px;
+    line-height: $header-height;
 
     .page-link {
         line-height: $base-line-height;
@@ -45,14 +41,13 @@
  * Site footer
  */
 .site-footer {
-    height: 48px;
-    border-top: 1px dashed $grey-color-light;
-    line-height: 48px;
+    height: $footer-height;
+    border-top: 1px dashed $light-grey-color;
+    line-height: $footer-height;
 }
 
 .footer-col-left {
     float: left;
-
 }
 
 .footer-col-left a {
@@ -63,6 +58,7 @@
 
 .footer-col-right {
     float: right;
+    text-align: right;
 }
 
 .footer-col-right a {
@@ -82,7 +78,7 @@
     height: $spacing-unit;
     line-height: $spacing-unit;
     right: 0;
-    bottom: $spacing-unit*1.5 + 48px;
+    bottom: $spacing-unit*1.5 + $footer-height;
     font-size: $spacing-unit * 0.8;
     text-align: center;
     visibility: hidden;
@@ -116,13 +112,13 @@
         margin-bottom: $spacing-half;
 
         h2 a {
-            display: inline-block;
         }
     }
 
 }
 
 .post-meta {
+    display: block;
     font-size: $tiny-font-size;
     color: $grey-color;
 }
@@ -130,6 +126,7 @@
 .post-link {
     display: block;
     font-size: $medium-font-size;
+    padding: 0.2em 0;
 }
 
 
@@ -143,7 +140,6 @@
 
 .post-title {
     font-size: $large-font-size;
-    //letter-spacing: -1px;
     line-height: 1;
 }
 
@@ -167,5 +163,54 @@
         font-size: $base-font-size * 1.1;
     }
 
+    sup a:before{
+        content: "[";
+    }
+    sup a:after{
+        content: "]";
+    }
+
+    .footnotes {
+        border-top: 1px solid #666;
+        padding-top: $spacing-unit / 2;
+        font-size: $small-font-size;
+    }
+
+    .footnotes code {
+        font-size: $small-font-size - 2px;
+    }
+
+    .footnotes ol {
+        counter-reset: idx 0;
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .footnotes li {
+        float: left;
+        width: 90%;
+        margin-left: 2em;
+    }
+
+    .footnotes li:before {
+        float: left;
+        content: '[' counter(idx) '] ';
+        counter-increment: idx;
+        width: 2em;
+        text-align: right;
+        margin-left: -2em;
+    }
+
+    .footnotes li:target  {
+        color: $red-color;
+    }
+
+    .footnotes p {
+        float: left;
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
+    }
 }
+
 
