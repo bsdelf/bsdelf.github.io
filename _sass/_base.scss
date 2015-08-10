@@ -220,7 +220,7 @@ hr {
  * Icons
  */
 .icon {
-    > svg {
+    > img {
         display: inline-block;
         width: $big-font-size;
         height: $big-font-size;
@@ -233,7 +233,7 @@ hr {
 }
 
 .icon-rect {
-    > svg {
+    > img {
         display: inline-block;
         vertical-align: middle;
 
