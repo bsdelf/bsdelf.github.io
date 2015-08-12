@@ -8,7 +8,7 @@ tags: [doc, freebsd]
 {% assign manref = "https://www.freebsd.org/cgi/man.cgi?query=" %}
 
 
-修订日期：2015.08.07
+修订日期：2015.08.12
 
 注意：
 
@@ -43,7 +43,7 @@ FreeBSD 是一套完整的操作系统。FreeBSD 团队不但开发自家的内�
 
 应用开发者需要注意的：
 
-- 请不要在脚本中写 `#!/usr/bin/bash`，要写 `#!/usr/bin/env bash`。perl、python 等同理。
+- 请不要在脚本中写 `#!/bin/bash`，要写 `#!/usr/bin/env bash`。perl、python 等同理。
 - FreeBSD 第三方应用的头文件一般位于 `/usr/local/include`。库文件等同理。
 - FreeBSD 没有 `epoll`，但是有 `kqueue`。
 - FreeBSD 没有 `inotify`，但是有 `libinotify`。
@@ -180,7 +180,7 @@ alias install-bootcode  'gpart bootcode -b /boot/pmbr -p /boot/gptzfsboot -i 1 a
 
 第三方应用是通过 `pkg` 或 ports 安装的。前者是二进制安装，类似 Arch Linux 的 pacman，适合于普通用户和服务器用户；后者是编译安装，类似于 Gentoo Linux 的 portage，适合于机器性能比较好的、需要深度定制的用户。注意，这两种安装方式最好不要混用。
 
-至于更新，如果用 `pkg` 安装应用，那么更新还是用 `pkg`。如果用 ports 安装应用，那么建议使用 `portmaster`，注意该命令并不是基系统的一部分，需要用 ports 安装[^portmaster]。
+关于更新，如果用 `pkg` 安装应用，那么更新还是用 `pkg`。如果用 ports 安装应用，那么建议使用 `portmaster`，注意该命令并不是基系统的一部分，需要用 ports 安装[^portmaster]。
 
 [^portmaster]: portmaster 是纯 shell 脚本，它的开发者同时也是 FreeBSD 开发者。
 
