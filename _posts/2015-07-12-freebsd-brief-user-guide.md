@@ -132,7 +132,7 @@ svn checkout svn://svn.freebsd.org/base/head /usr/src
 
 为了简化工作，大家可以使用下面这些 tcsh alias：
 {% highlight tcsh %}
-alias base-sync    'cd /usr/src && svn up ; cd -'
+alias base-sync    'svn update /usr/src'
 alias base-notice  '$PAGER /usr/src/UPDATING'
 alias make-world  'echo "`date "+%H:%M:%S"` making world..." \
                    make -C /usr/src -j3 buildworld > /tmp/make-world.log \
