@@ -144,7 +144,6 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
     //-ms-text-spacing: ideograph-alpha;
 
     h1 {
@@ -185,6 +184,7 @@
         list-style-type: none;
         margin-left: 0;
         padding-left: 0;
+        @extend %clearfix;
     }
 
     .footnotes li {
