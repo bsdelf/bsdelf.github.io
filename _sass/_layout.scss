@@ -141,6 +141,7 @@
 .post-title {
     font-size: $large-font-size;
     line-height: 1;
+    text-shadow: 0px 1px 2px #bbb;
 }
 
 .post-content {
@@ -213,4 +214,37 @@
     }
 }
 
+.mydis {
+    margin-top: $spacing-unit;
+}
 
+/*
+#disqus_thread {
+    position: relative;
+    padding: 1em 1em;
+}
+
+#disqus_thread:before, #disqus_thread:after{
+    content: '';
+    display: block;
+    height: 0.8em;
+    width: 100%;
+    border: 1px solid #666;
+    position: absolute;
+    left: -1px;
+}
+
+#disqus_thread:after {
+    top: 0;
+    border-bottom: 0;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+}
+
+#disqus_thread:before {
+    bottom: 0;
+    border-top: 0;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+}
+*/
