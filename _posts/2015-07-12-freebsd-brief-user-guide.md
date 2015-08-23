@@ -8,7 +8,7 @@ tags: [doc, freebsd]
 {% assign manref = "https://www.freebsd.org/cgi/man.cgi?query=" %}
 
 
-修订日期：2015.08.12
+修订日期：2015.08.24
 
 注意：
 
@@ -31,9 +31,10 @@ FreeBSD 是一套完整的操作系统。FreeBSD 团队不但开发自家的内�
 
 其他区别如下：
 
-- FreeBSD root 用户的 shell 是 `tcsh` ，普通用户的 shell 是`sh`。最好别去改 root 用户的 shell。
+- FreeBSD root 用户的 shell 是 `tcsh` ，普通用户的 shell 是 `sh`。最好别改 root 用户的 shell。
 - FreeBSD 的关机命令是 `shutdown -p now`。
 - FreeBSD 的 `make/grep/sed/awk` 与 GNU 那套不同。
+- FreeBSD 有个叫 `ee` 的文本编辑器，风格与 `nano` 类似。
 - FreeBSD 管理系统用户与组的命令是 `pw`。
 - FreeBSD 使用 `gpart` 命令管理分区。
 - FreeBSD 原生的防火墙是 `ipfw`。
@@ -46,10 +47,13 @@ FreeBSD 是一套完整的操作系统。FreeBSD 团队不但开发自家的内�
 - 请不要在脚本中写 `#!/bin/bash`，要写 `#!/usr/bin/env bash`。perl、python 等同理。
 - FreeBSD 第三方应用的头文件一般位于 `/usr/local/include`。库文件等同理。
 - FreeBSD 没有 `epoll`，但是有 `kqueue`。
-- FreeBSD 没有 `inotify`，但是有 `libinotify`。
+- FreeBSD 没有 `inotify`，若要移植 Linux 相关代码可安装 `libinotify`。
+- FreeBSD 没有 `sha256sum` 命令，但是有 `sha256`。md5 等类似。
+- FreeBSD 特有的 `jot` 命令能够生成数列，某些场景下可以与 `xargs` 搭配使用。
 - FreeBSD 的音频系统是 OSS，接口 比 ALSA 简单明了。
 - FreeBSD 的 filemon 内核模块可以监控子进程的所有文件操作。
-- FreeBSD 有个非常有用的库叫做 libutil，所有文档在这儿：`ls /usr/src/lib/libutil/*.3`。
+- FreeBSD 的 libutil 库也许会派上用场，相关关文档：`/usr/src/lib/libutil/*.3`。
+- FreeBSD 安装 [Linux 二进制兼容层](https://www.freebsd.org/doc/handbook/linuxemu.html)后，能够直接运行 Linux 可执行程序。
 - FreeBSD 项目大部分源代码遵循 [BSD License](https://www.freebsd.org/copyright/freebsd-license.html)，对商业闭源应用十分友好。
 
 # 系统的大致结构
