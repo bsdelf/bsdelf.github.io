@@ -52,7 +52,7 @@ FreeBSD 是一套完整的操作系统。FreeBSD 团队不但开发自家的内�
 - FreeBSD 特有的 `jot` 命令能够生成数列，某些场景下可以与 `xargs` 搭配使用。
 - FreeBSD 的音频系统是 OSS，接口 比 ALSA 简单明了。
 - FreeBSD 的 filemon 内核模块可以监控子进程的所有文件操作。
-- FreeBSD 的 libutil 库也许会派上用场，相关关文档：`/usr/src/lib/libutil/*.3`。
+- FreeBSD 的 libutil 库也许会派上用场，相关文档：`/usr/src/lib/libutil/*.3`。
 - FreeBSD 安装 [Linux 二进制兼容层](https://www.freebsd.org/doc/handbook/linuxemu.html)后，能够直接运行 Linux 可执行程序。
 - FreeBSD 项目大部分源代码遵循 [BSD License](https://www.freebsd.org/copyright/freebsd-license.html)，对商业闭源应用十分友好。
 
