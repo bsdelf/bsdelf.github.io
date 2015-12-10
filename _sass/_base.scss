@@ -134,27 +134,44 @@ blockquote {
 /**
  * Code formatting
  */
-pre, code {
-    border: 1px solid #ccc;
-    border-radius: 4px;
+code {
     font-family: $mono-font-family;
     font-size: $base-font-size - 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0px 4px;
     background: #f5f2f0 none repeat scroll 0% 0%;
 }
 
-code {
-    padding: 0px 4px;
-}
+figure {
+    font-family: $mono-font-family;
+    font-size: $base-font-size - 2px;
+    margin-bottom: 0px;
 
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
+    > pre {
+        padding: 4px 10px;
+        overflow-x: auto;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #f5f2f0 none repeat scroll 0% 0%;
 
-    > code {
-        font-size: $small-font-size;
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+        > code {
+            border: none;
+            padding: 0px;
+        }
+
+        table, pre {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        td {
+            padding: 0 0 0 1em;
+        }
+
+        td:first-child {
+            padding: 0px;
+        }
     }
 }
 
@@ -169,6 +186,9 @@ table, th, td {
     padding: 4px 6px;
 }
 
+code > table, th, td {
+    border: none;
+}
 
 
 /**
@@ -238,4 +258,8 @@ table, th, td {
             fill: $grey-color;
         }
     }
+}
+
+.lineno {
+    color: gray;
 }
