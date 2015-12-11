@@ -33,7 +33,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure, hr, table,
+ul, ol, dl, figure, hr, table, .highlight
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -143,10 +143,9 @@ code {
     background: #f5f2f0 none repeat scroll 0% 0%;
 }
 
-figure {
+.highlight {
     font-family: $mono-font-family;
     font-size: $base-font-size - 2px;
-    margin-bottom: 0px;
 
     > pre {
         padding: 4px 10px;
@@ -154,6 +153,7 @@ figure {
         border: 1px solid #ccc;
         border-radius: 4px;
         background: #f5f2f0 none repeat scroll 0% 0%;
+        margin-bottom: 0px;
 
         > code {
             border: none;
