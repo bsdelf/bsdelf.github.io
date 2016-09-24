@@ -9,7 +9,7 @@ tags:   [JavaScript]
 在 C++ 中，当我们想用下标访问对象中的第 _i_ 个元素时，可以重载下标运算符（subscript operator）。但是 JavaScript（ECMAScript 5.1）中并没有类似的机制，如果我们想访问第 _i_ 个元素，必须添加一个名为 `ToString(i)` 的属性；如果想访问元素 _1_ .. _n_ ，就必须添加 _n_ 个属性。显然这种做法存在额外的内存开销，在嵌入式硬件上是不可接受的。
 
 # 思路
-为了解决上述问题，一个很自然的想法就是扩展 JS 引擎的 `[[Get]]` / `[[Put]]` 实现：
+为了解决上述问题，一个很自然的想法就是对 ECMA 的 `[[Get]]`[^ecma-get] 和 `[[Put]]`[^ecma-put] 进行扩展：
 
 1. 当属性 `P` 未找到时，令 `I = ToNumber(P)`。
 1. 若 `I` 为整数，则查找 `__get_by_index__` / `__put_by_index__` 方法。
@@ -95,3 +95,6 @@ for (var i = 0; i < 10; ++i) {
 {% endhighlight %}
 
 大功告成～
+
+[^ecma-get]: [http://www.ecma-international.org/ecma-262/5.1/#sec-8.12.3](http://www.ecma-international.org/ecma-262/5.1/#sec-8.12.3)
+[^ecma-put]: [http://www.ecma-international.org/ecma-262/5.1/#sec-8.12.5](http://www.ecma-international.org/ecma-262/5.1/#sec-8.12.5)
