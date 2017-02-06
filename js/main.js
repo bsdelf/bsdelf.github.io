@@ -1,3 +1,16 @@
+'use strict';
+
+var $root;
+var $footer;
+var $backtop;
+
+$(document).ready(function () {
+    setupBacktop();
+    setupHrefJump();
+});
+
+//----------------------------------------------------------------------------
+
 function placeBacktop() {
     var off = $footer.offset().left + $footer.width() - $backtop.width();
     $backtop.css('left', off);
@@ -15,7 +28,7 @@ function setupBacktop() {
     $backtop = $('#backtop');
 
     $backtop.click(function () {
-        $root.animate( { scrollTop: 0 }, 400 );
+        $root.animate({ scrollTop: 0 }, 400 );
         return false;
     });
 
@@ -51,9 +64,3 @@ function setupHrefJump() {
     });
 }
 
-//----------------------------------------------------------------------------
-
-$(document).ready(function () {
-    setupBacktop();
-    setupHrefJump();
-});

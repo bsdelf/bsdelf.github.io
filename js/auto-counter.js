@@ -1,3 +1,5 @@
+'use strict';
+
 /** 
  *  Licenses: BSD2CLAUSE
  *
@@ -39,7 +41,7 @@
         prev = crnt;
 
         if (levels !== null) {
-            levelStr = '';
+            var levelStr = '';
             levels.forEach(function (level) {
                 levelStr += level + '.';
             });
