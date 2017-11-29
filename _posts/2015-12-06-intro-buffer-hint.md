@@ -58,9 +58,9 @@ nnoremap \ :call bufferhint#LoadPrevious()<CR>
 ![bufferhint]({{ site.url }}/images/bufferhint.png)
 
 # One More Thing
-好了，现在是广告时间。如果您觉得这个插件好用，可以通过以下任何一种方式予以支持哦 >^_^<
+如果您觉得这个插件好用，可以通过以下方式予以支持哦 >^_^<
 
-- 在 GitHub 上点亮一颗星：[https://github.com/bsdelf/bufferhint](https://github.com/bsdelf/bufferhint)
-- 在 Vim 官网上给予好评：[http://www.vim.org/scripts/script.php?script_id=5272](http://www.vim.org/scripts/script.php?script_id=5272)
-- 在知乎上点赞：[http://www.zhihu.com/question/19634223/answer/75807105](http://www.zhihu.com/question/19634223/answer/75807105)
+- [在 GitHub 上点亮一颗星](https://github.com/bsdelf/bufferhint)
+- [在 Vim 官网上给予好评](http://www.vim.org/scripts/script.php?script_id=5272)
+- [在知乎上点赞](http://www.zhihu.com/question/19634223/answer/75807105)
 
