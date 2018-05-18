@@ -8,7 +8,7 @@ tags: [doc, freebsd]
 {% assign manref = "https://www.freebsd.org/cgi/man.cgi?query=" %}
 
 
-修订日期：2015.08.24
+修订日期：2018.05.18
 
 注意：
 
@@ -42,15 +42,15 @@ FreeBSD 是一套完整的操作系统。FreeBSD 团队不但开发自家的内�
 - FreeBSD 有自己的引导方式，不一定要用 GRUB。
 - FreeBSD 不是 Unix<sup>&reg;</sup>，然而[历史告诉我们](https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg) FreeBSD 就是 Unix。
 
-应用开发者需要注意的：
+开发者需要注意的：
 
-- 请不要在脚本中写 `#!/bin/bash`，要写 `#!/usr/bin/env bash`。perl、python 等同理。
-- FreeBSD 第三方应用的头文件一般位于 `/usr/local/include`。库文件等同理。
+- 不要在脚本中写 `#!/bin/bash`，要写 `#!/usr/bin/env bash`。perl、python 等同理。
+- FreeBSD 第三方库默认安装路径是 `/usr/local/`。
 - FreeBSD 没有 `epoll`，但是有 `kqueue`。
 - FreeBSD 没有 `inotify`，若要移植 Linux 相关代码可安装 `libinotify`。
 - FreeBSD 没有 `sha256sum` 命令，但是有 `sha256`。md5 等类似。
 - FreeBSD 特有的 `jot` 命令能够生成数列，某些场景下可以与 `xargs` 搭配使用。
-- FreeBSD 的音频系统是 OSS，接口 比 ALSA 简单明了。
+- FreeBSD 的音频系统是 OSS，API 比 ALSA 简单好用。
 - FreeBSD 的 filemon 内核模块可以监控子进程的所有文件操作。
 - FreeBSD 的 libutil 库也许会派上用场，相关文档：`/usr/src/lib/libutil/*.3`。
 - FreeBSD 安装 [Linux 二进制兼容层](https://www.freebsd.org/doc/handbook/linuxemu.html)后，能够直接运行 Linux 可执行程序。
@@ -401,15 +401,8 @@ ln -sfh $CacheDir $HOME/.cache
 
 ## 谁在使用 FreeBSD
 
-* Apple: OS X, iOS
+* Apple: MacOS, iOS
 * Sony: PlayStation 4
 * WhatsApp 和 Netflix 的服务器
 * [更多应用案例](https://www.freebsd.org/doc/handbook/nutshell.html#introduction-nutshell-users)
-
-## 支持 FreeBSD 的云服务器
-
-* Amazon Web Services
-* DigitalOcean
-* 阿里云
-* 青云
 
