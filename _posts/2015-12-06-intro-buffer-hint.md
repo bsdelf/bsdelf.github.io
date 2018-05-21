@@ -31,7 +31,7 @@ tags:   [vim]
 
 ## 安装设置
 
-1. 下载插件：[http://www.vim.org/scripts/script.php?script_id=5272](http://www.vim.org/scripts/script.php?script_id=5272)
+1. 下载插件：[https://www.vim.org/scripts/script.php?script_id=5272](https://www.vim.org/scripts/script.php?script_id=5272)
 1. 复制 bufferhint.vim 到 plugin 目录下，或者用 pathogen 或 vundle
 1. 在 `~/.vimrc` 末尾加入以下设置：
 
